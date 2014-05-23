@@ -6,7 +6,7 @@
   function deepPick(object, json){
     object = _.pick(object, _.keys(json));
     _.each(_.keys(json), function(key){
-      if(json[key] instanceof Object){
+      if(_.isObject(json[key])){
         object[key] = deepPick(object[key], json[key]);
       };
     });
