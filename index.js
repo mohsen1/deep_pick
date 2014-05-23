@@ -1,4 +1,7 @@
 (function(){
+  if(typeof _ === 'undefined'){
+    throw new Error('Deep Pick Underscore plug-in expects _ in global context');
+  }
 
   function deepPick(object, json){
     object = _.pick(object, _.keys(json));
