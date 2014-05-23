@@ -31,7 +31,7 @@ var schema = {
   }
 };
 
-deepPick(input, schema); \\ =>
+deepPick(input, schema); // =>
 
 {
   one: 1,
