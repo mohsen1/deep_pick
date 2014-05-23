@@ -53,6 +53,46 @@ deepPick(input, schema); // =>
 }
 ```
 
+### Array Support Example
+```
+var arr = [
+  {
+    blue: 100,
+    green: 400,
+    red: 300,
+    grey: 200
+  },
+  {
+    blue: 10,
+    green: 40,
+    red: 30,
+    grey: 20
+  },
+  {
+    blue: 1,
+    green: 4,
+    red: 3,
+    grey: 2
+  },
+
+];
+
+var arrSchema = [{blue: true}];
+
+_.deepPick(arr, arrSchema)) // =>
+  [
+    {
+      blue: 100
+    },
+    {
+      blue: 10
+    },
+    {
+      blue: 1
+    }
+  ]
+```
+
 ### Available in NPM and Bower
 
 ```
