@@ -63,15 +63,17 @@
     }());
   }
 
-
-
-  _.deepPick = function(object, json){
+  function deepPick(object, json){
     object = _.pick(object, Object.keys(json));
     Object.keys(json).forEach(function(key){
       if(json[key] instanceof Object){
-        object[key] = _.deepPick(object[key], json[key]);
+        object[key] = deepPick(object[key], json[key]);
       };
     });
     return object;
-  };
+  }
+
+  _.mixin({
+    deepPick: deepPick
+  });
 })();

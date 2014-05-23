@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/mohsen1/deep_pick/issues"
   },
-  "homepage": "https://github.com/mohsen1/deep_pick"
+  "homepage": "https://github.com/mohsen1/deep_pick",
+  "devDependencies": {
+    "underscore": "~1.6.0"
+  }
 }
