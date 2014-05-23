@@ -53,5 +53,11 @@ deepPick(input, schema); // =>
 }
 ```
 
+### Available at NPM
+
+```
+npm install deep_pick
+```
+
 ### License 
 MIT
