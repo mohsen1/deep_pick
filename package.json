@@ -4,7 +4,7 @@
   "description": "Underscore Deep Pick Plugin ",
   "main": "index.js",
   "scripts": {
-    "test": "echo 'no test yet'"
+    "test": "node test"
   },
   "repository": {
     "type": "git",
