@@ -9,14 +9,19 @@ Makes it easy to pick deep inside an object. It's very similiar to XSLT. You nee
 
 ``` javascript
 var input = {
-  one: 34,
+  one: 1,
   two: true,
   three: 'Three',
   four: [1,2,3,4],
   five: {
     alpha: 1,
     beta: 2,
-    gamma: 3
+    gamma: 3,
+    teta: {
+        alef: 1,
+        beh: 2,
+        peh: 3
+    }
   },
   answer: '42.00',
   description: 'This is an object.'
@@ -27,7 +32,10 @@ var schema = {
   one: true,
   three: true,
   five: {
-    beta: true
+    alpha: true,
+    teta: {
+      beh: true
+    }
   }
 };
 
