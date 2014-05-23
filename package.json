@@ -1,0 +1,22 @@
+{
+  "name": "deep_pick",
+  "version": "0.0.1",
+  "description": "Underscore Deep Pick Plugin ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'no test yet'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mohsen1/deep_pick.git"
+  },
+  "keywords": [
+    "underscore"
+  ],
+  "author": "Mohsen Azimi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mohsen1/deep_pick/issues"
+  },
+  "homepage": "https://github.com/mohsen1/deep_pick"
+}
