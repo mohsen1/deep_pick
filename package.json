@@ -1,6 +1,6 @@
 {
   "name": "deep_pick",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Underscore Deep Pick Plugin ",
   "main": "index.js",
   "scripts": {
