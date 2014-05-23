@@ -53,10 +53,14 @@ deepPick(input, schema); // =>
 }
 ```
 
-### Available at NPM
+### Available at NPM and Bower
 
 ```
 npm install deep_pick
+```
+
+```
+bower install deep_pick
 ```
 
 ### License 
