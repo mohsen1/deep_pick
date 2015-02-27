@@ -29,7 +29,12 @@ var schema = {
     teta: {
       beh: true
     }
-  }
+  },
+  six: [
+    {
+      lamba: true
+    }
+  ]
 };
 
 

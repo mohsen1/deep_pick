@@ -11,7 +11,7 @@
     }
     object = _.pick(object, _.keys(json));
     _.each(_.keys(json), function(key){
-      if(_.isObject(json[key])){
+      if(_.isObject(json[key] && object[key])){
         object[key] = deepPick(object[key], json[key]);
       };
     });
