@@ -1,6 +1,8 @@
 Deep Pick
 =========
 
+[![Build Status](https://travis-ci.org/mohsen1/deep_pick.svg)](https://travis-ci.org/mohsen1/deep_pick)
+
 Underscore Deep Pick Plugin
 
 Makes it easy to pick deep inside an object. It's very similiar to XSLT. You need ro provide a schema that defines hieriachy of keys you need in your output instead of a list of keys that you use in regular `_.pick`.
