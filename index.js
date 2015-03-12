@@ -6,7 +6,11 @@
   function deepPick(object, json){
     if(_.isArray(json) && _.isArray(object)){
       return _.map(object, function(item){
-        return deepPick(item, json[0]);
+        if(_.isObject(item)) {
+          return deepPick(item, json[0]);
+        } else {
+          return item;
+        }
       });
     }
     object = _.pick(object, _.keys(json));
