@@ -24,6 +24,7 @@ var input = {
 var schema = {
   one: true,
   three: true,
+  four: [true],
   five: {
     alpha: true,
     teta: {
@@ -37,10 +38,9 @@ var schema = {
   ]
 };
 
-
 console.assert(
   JSON.stringify(_.deepPick(input, schema)) ===
-  '{"one":1,"three":"Three","five":{"alpha":1,"teta":{"beh":2}}}'
+  '{"one":1,"three":"Three","four":[1,2,3,4],"five":{"alpha":1,"teta":{"beh":2}}}'
 );
 
 
