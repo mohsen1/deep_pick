@@ -1,5 +1,5 @@
 _ = require('underscore');
-_.mixin({ deepPick: require('.') });
+_.mixin({ deepPick: require('./') });
 
 var input = {
   one: 1,
