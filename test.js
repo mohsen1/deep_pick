@@ -1,5 +1,5 @@
 _ = require('underscore');
-require('./index.js');
+_.mixin({ deepPick: require('.') });
 
 var input = {
   one: 1,
