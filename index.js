@@ -1,8 +1,8 @@
 (function(){
-  if(typeof _ === 'undefined'){
+  if(typeof window === 'object' && typeof _ === 'undefined'){
     throw new Error('Deep Pick Underscore plug-in expects _ in global context');
   }
-
+  
   function deepPick(object, json){
     if(_.isArray(json) && _.isArray(object)){
       return _.map(object, function(item){
@@ -22,7 +22,11 @@
     return object;
   }
 
-  _.mixin({
-    deepPick: deepPick
-  });
+    if (typeof module !== 'undefined') {
+      module.exports = deepPick;
+    } else {
+     _.mixin({
+      deepPick: deepPick
+    }); 
+    }
 })();

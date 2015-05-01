@@ -97,12 +97,23 @@ _.deepPick(arr, arrSchema)) // =>
 
 ### Available in NPM and Bower
 
+#### NodeJS environment
 ```
 npm install deep_pick
 ```
 
 ```
+var _ = require('underscore');
+_.mixin({ deepPick: require('deep_pick') });
+``` 
+
+### Browser environent
+```
 bower install deep_pick
+```
+```html
+<script src="/path/to/underscore.js"></script>
+<script src="/path/to/deep_pick.js"></script>
 ```
 
 ### License 
